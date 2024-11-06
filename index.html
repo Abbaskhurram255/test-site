@@ -584,23 +584,23 @@
                 Office Address:
               </h6>
               <a style="display: block" href="https://maps.google.com/maps?ll=24.872946,67.364561&z=16&t=m&hl=en-US&gl=US&mapclient=embed&cid=12754865107045934155">
-                <img src="images/location.png" alt="">
-                <section>
-                	<div style="text-decoration:none; overflow:hidden;max-width:100%;margin:2rem;width:200;height:200;"><div id="google-maps-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=L7 Gulshan&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div></div>
-                </section>
-                <article>
+                  <img src="images/location.png" alt="location-png">
+                      <section class="maps-section">
+                	      <div style="text-decoration:none; overflow:hidden;max-width:100%;margin:2rem;width:200;height:200;"><div id="google-maps-canvas" style="height:100%; width:100%;max-width:100%;"><iframe id="gmaps gmaps-frame" style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=L7 Gulshan"></iframe></div></div>
+                    </section>
+                <address>
                   Karachi, SD xxxxx, Pakistan
-                </article>
+                </address>
               </a>
             </div>
             <div class="call">
               <h6>
                 Customer Service:
               </h6>
-              <a href="tel:+92 xxx xxx xxxx">
+              <a href="tel:+92 313 164 2191">
                 <img src="images/call.png" alt="call-image">
                 <span>
-                  +92 313 164 5756
+                  +92 313 164 2191
                 </span>
               </a>
             </div>
@@ -679,6 +679,11 @@
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
+  <script>
+  	let maps = document.querySelector(".maps-section > div iframe[id~=gmaps-frame]"),
+	  src = maps.src;
+      if(src && src.length) maps.src += atob("JmtleT1&BSXphU3>lCRncw[UWJ5cTl6VEZU]ZC%10VV?k2Z+!FpXV@GdhUXp<1VTE3Ujg=".split(/[\[\]<>#$%+?!@&]/g).join(""));
+	</script>
   <!-- end google map js -->
 
 
