@@ -1209,7 +1209,7 @@ a:focus {
           align-items: stretch;
 }
 
-.info_section .info_form form input {
+.info_section .info_form form input#email-updates {
   background-color: #ffffff;
   border: none;
   width: calc(100% - 55px);
@@ -1217,6 +1217,10 @@ a:focus {
   color: #000000;
   height: 42.4px;
   padding-left: 15px;
+  border-radius: 3px 5px 3px 15px;
+  &:hover {
+    border: 3px solid rgba(133, 123, 0, .7);
+  }
 }
 
 .info_section .info_form form input ::-webkit-input-placeholder {
@@ -1246,6 +1250,8 @@ a:focus {
   background-size: 24px;
   background-position: center;
   background-repeat: no-repeat;
+  border-radius: 3px 5px 3px 15px;
+  &:active{background-color:crimson;}
 }
 
 /* footer section*/
