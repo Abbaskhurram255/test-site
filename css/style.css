@@ -1404,12 +1404,12 @@ h1, h2 {
     transform: rotateY(100deg) scale3d(1.8, 0, 2.2);
 }
 
-.label#subscription-label, :is(h1,h2,h3,h4,h5,h6,.discover li a, .info-nav li a) {
+.label#subscription-label, :is(h1,h2,h3,h4,h5,h6), :is(.discover, .info-nav) li a {
 	&:active{
 		color: gold;
 	}
 }
-:not(h4.golden-text):is(.info-nav, .discover) li a, h4 {
+h4, :not(h4.golden-text):is(.info-nav, .discover) li a {
 	transition: color 1.5s ease;
 	&:hover{
 		color: goldenrod;
