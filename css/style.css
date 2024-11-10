@@ -1409,7 +1409,7 @@ h1, h2 {
 		color: gold;
 	}
 }
-:not(h4.golden-text):is(h4, .info-nav, .discover) li a {
+:not(h4.golden-text):is(.info-nav, .discover) li a, h4 {
 	transition: color 1.5s ease;
 	&:hover{
 		color: goldenrod;
