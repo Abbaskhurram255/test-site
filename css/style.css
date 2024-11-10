@@ -1405,9 +1405,14 @@ h1, h2 {
 }
 
 .label#subscription-label, :is(h1,h2,h3,h4,h5,h6,.discover li a, .info-nav li a) {
-	transition: color 2.5 ease;
 	&:active{
 		color: gold;
+	}
+}
+:not(h4.golden-text):is(h4, .info-nav li a){
+	transition: color 1.5s ease;
+	&:hover{
+		color: goldenrod;
 	}
 }
 
