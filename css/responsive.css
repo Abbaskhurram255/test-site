@@ -212,14 +212,6 @@ img {
 	}
 }
 
-.footer-logo{
-	-webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-	-ms-transform: rotate(-90deg);
-	-o-transform: rotate(-90deg);
-	transform: rotate(-90deg);
-	border-radius: 1rem .5rem;
-}
 
 @media (max-width: 1120px) {}
 
