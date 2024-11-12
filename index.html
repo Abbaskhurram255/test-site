@@ -342,7 +342,7 @@
           Testimonials | Feedback
         </h2>
         <p>
-          Lorem Ipsum available, but the majority
+          What people say about us
         </p>
       </div>
       <div class="client_container">
@@ -363,7 +363,7 @@
                   <h4 class="golden-text anim-in-out">
                     Believable
                   </h4>
-                  <p>
+                  <p class="comment" id="comment">
                     The most bizarre photography studio in the area. Apparently, there aren't any good ones out there [at least in my area]
                   </p>
                   <img type="image/png" alt="quote-sign" src="images/quote.png">
@@ -379,7 +379,7 @@
                   <h4 class="golden-text anim-in-out">
                     Believable
                   </h4>
-                  <p>
+                  <p class="comment" id="comment-2">
                     There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you
                   </p>
                   <img type="image/png" src="images/quote.png" alt="quote-sign">
@@ -395,7 +395,7 @@
                   <h4 class="golden-text anim-in-out">
                     Believable
                   </h4>
-                  <p>
+                  <p class="comment" id="comment">
                     There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you
                   </p>
                   <img src="images/quote.png" alt="">
@@ -586,7 +586,7 @@
               <a style="display: block" href="https://maps.google.com/maps?ll=24.872946,67.364561&z=16&t=m&hl=en-US&gl=US&mapclient=embed&cid=12754865107045934155">
                   <img src="images/location.png" alt="location-png">
                       <section class="maps-section">
-                	      <div style="text-decoration:none; overflow:hidden;max-width:100%;margin:2rem;width:200;height:200;"><div id="google-maps-canvas" style="height:100%; width:100%;max-width:100%;"><iframe id="gmaps gmaps-frame" style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=L7 Gulshan"></iframe></div></div>
+                	      <div style="text-decoration:none; overflow:hidden;max-width:100%;margin:2rem;width:12rem;height:12rem;border-radius:1.8rem""><div id="google-maps-canvas" style="height:100%; width:100%;max-width:100%;"><iframe id="gmaps gmaps-frame" style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=L7 Gulshan"></iframe></div></div>
                     </section>
                 <address>
                   Karachi, SD xxxxx, Pakistan
@@ -805,6 +805,15 @@
 			[...document.querySelectorAll("h4.golden-text")].forEach(el => {el.innerHTML = `<h3>${reviewer().name.full} from ${reviewer().city}</h3>`})
 		}
 		console.log(img)
+	});
+	
+	let sample_reviews = [
+		"pretty fascinated by this, meri tasweere buhat pyaari ai", "who wouldn't love this 🥰", "I... em.... ig... saitiiiiiiiiiiid", "thumbs up 💕", "achi service, ache servers😘", "saved me a lifetime, you are my new photo-star", "ap ne to karzdaar bana dia rockstar, rockstar, ap ki itni achi service ke badle kya chaahenge? Sab haazir!", "can't thank you enough for this picture, everyone I know, seems to be lovin' it", "long live the queen/king behind this studio", "bloody hell, I've been looking for this everywhere", "taswwer dikhaate hi ghar walo ne kya kaha? \"Spectacular, or nahi hen\"", "out of this world, ap log to yaar... barhia ho🤞", "Behtareen", "Herat angez photography karte he yaar ye to", "Barhia yaar", "Kaabile taareef👌", "Han, buri nahi ⭐⭐⭐ out of 5", "Ise jitna chaaho utna kam. Mera to dil karta he roz jau inke han", "Maze kara die yaar", "Is pe dhyaan mera saalo pehle para hota kaash", "Sachi mehnat bekaar nahi jaati, proud of you 💋", "Service rukni nahi chahie, akhir he is itni achi💪", "👀Aakhe khuli reh gai, bhai", "Itna talent mujhe bhi chahie"
+	];
+	document
+	.querySelectorAll(".review-section .comment")
+	.forEach(el => {
+		el.innerHTML = sample_reviews[Math.floor(Math.random() * sample_reviews.length)]
 	});
   </script>
 
