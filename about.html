@@ -106,13 +106,13 @@
   </section>
   <!-- end about section -->
 
-  <section class="info_section layout_padding2">
+  <section class="info_section layout_padding2" style="border-top: 4px dotted #999">
     <div class="container">
       <div class="row">
         <div class="col-md-3">
           <div class="info-logo">
             <a href="#">
-              <img type="image/webp" class="logo-2 footer-logo" src="images/logo-black.webp" height="128" width="128" alt="footer-logo">
+              <img style="-webkit-transform:rotate(-90deg) !important; -moz-transform:rotate(-90deg) !important; -ms-transform:rotate(-90deg) !important; -o-transform:rotate(-90deg) !important; transform:rotate(-90deg) !important" type="image/png" class="logo-2 footer-logo" src="images/camera-lens.png" height="128" width="128" alt="footer-logo">
             </a>
             <p>
               It is a long established fact that a reader will be distracted by the readable content of a page when
@@ -166,7 +166,7 @@
               <a style="display: block" href="https://maps.google.com/maps?ll=24.872946,67.364561&z=16&t=m&hl=en-US&gl=US&mapclient=embed&cid=12754865107045934155">
                 <img src="images/location.png" alt="">
                 <section class="maps-section">
-                	<div style="text-decoration:none; overflow:hidden;max-width:100%;margin:2rem;width:12rem;height:12rem;border-radius:1.8rem""><div id="google-maps-canvas" style="height:100%; width:100%;max-width:100%;"><iframe id="gmaps gmaps-frame" style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=L7 Gulshan"></iframe></div></div>
+                	<div style="text-decoration:none; overflow:hidden;max-width:100%;margin:2rem;width:12rem;height:10rem;border-radius:1.8rem""><div id="google-maps-canvas" style="height:100%; width:100%;max-width:100%;"><iframe id="gmaps gmaps-frame" style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=L7 Gulshan"></iframe></div></div>
                 </section>
                 <article>
                   Karachi, SD xxxxx, Pakistan
@@ -179,17 +179,17 @@
               </h6>
               <a>
                 <img src="images/call.png" alt="call-image">
-                <span>
+                <article>
                   +92 313 164 5756
-                </span>
+                </article>
               </a>
             </div>
             <div class="call">
               <a href="mailto:demo@site.pk">
                 <img src="images/mail.png" alt="">
-                <span>
+                <article>
                   demo@site.pk
-                </span>
+                </article>
               </a>
             </div>
           </div>
@@ -211,9 +211,9 @@
 
                 </a>
               </li>
-              <li>
-                <a href="#">
-                  subscribe
+              <li onclick="(()=>document.querySelector('.newsletter-form button').click())()">
+                <a href="#form">
+                  Subscribe
                 </a>
               </li>
               <li>
@@ -224,16 +224,16 @@
             </ul>
             <div class="social-box">
               <a href="#">
-                <img src="images/fb.png" alt="">
+                <img src="images/fb.png" alt="FB icon">
               </a>
               <a href="#">
-                <img src="images/twitter.png" alt="">
+                <img type="text/png" src="images/twitter.png" alt="X icon">
               </a>
               <a href="#">
-                <img src="images/insta.png" alt="">
+                <img type="text/png" src="images/insta.png" alt="IG icon">
               </a>
               <a href="#">
-                <img src="images/linkedin.png" alt="">
+                <img type="text/png" src="images/linkedin.png" alt="LinkedIn icon">
               </a>
             </div>
           </div>
@@ -243,13 +243,18 @@
         <h4>
           Subscribe
         </h4>
-        <form action="">
-          <input id="email-updates" onfocus="(()=>document.querySelector('#email-updates').placeholder='')()" onblur="(()=>document.querySelector('#email-updates').placeholder='abc@xyz.zzz')()" type="email" placeholder="abc@xyz.zzz">
-          <div class="d-flex justify-content-end">
-            <button>
-				<!--this section is gonna carry an arrow png-->
-            </button>
-          </div>
+        <form class="newsletter-form" action="https://formsubmit.co/14f312b1adcd1cda642ee69edab7eea6" method="POST">
+            <input type="hidden" name="_subject" value="New newsletter subscription!">
+            <input type="hidden" name="_autoresponse" value="Thank you. You've successfully subscribed to our newsletters, from here and now, you'll be receiving our weekly updates. Shurkia!">
+            <!--<input type="hidden" name="_cc" value="x@ymail.z">-->
+            <input type="hidden" name="_captcha" value="false">
+            <!--don't delete-->
+            <input required id="email-updates" onfocus="(()=>document.querySelector('#email-updates').placeholder='')()" onblur="(()=>document.querySelector('#email-updates').placeholder='abc@xyz.zzz')()" type="email" placeholder="abc@xyz.zzz" pattern="^[\w\.-_+!]+@[\w]+\.[\w]{2,}(\.[\w]{2,})?$" title="Invalid Email" name="email">
+            <div class="d-flex justify-content-end">
+                <button>
+
+                </button>
+            </div>
         </form>
       </div>
     </div>
