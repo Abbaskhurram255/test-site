@@ -1547,7 +1547,6 @@ h4, :not(h4.golden-text):is(.info-nav, .discover) li a {
     border-radius: 50%;
     width: 4rem;
     height: 4rem;
-    margin-left: 1.5rem;
     //transition: border-radius 3.5s;
     //&:hover{border-radius: 0 5%}
 }

@@ -217,7 +217,7 @@ img {
 
 @media (max-width: 992px) {
   .custom_nav-container.navbar-expand-lg .navbar-nav .nav-item .nav-link {
-    margin: 10px;
+    margin: .6rem;
     padding: .4rem;
   }
   
@@ -227,7 +227,7 @@ img {
   }
 
   .about_section .box .img_container .img-box.b2 {
-    margin-top: 75px;
+    margin-top: 4.68rem;
   }
 
   .about_section .box .img_container .img-box.b2::before {
