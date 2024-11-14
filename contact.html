@@ -91,21 +91,29 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <form action="">
+          <form class="newsletter-form" action="https://formsubmit.co/14f312b1adcd1cda642ee69edab7eea6" method="POST" enctype="multipart/form-data">
+            <input type="hidden" name="_subject" value="New submission!">
+            <input type="hidden" name="_autoresponse" value="Thank you. You will be responded back real quick!">
+            <!--<input type="hidden" name="_cc" value="x@ymail.z">-->
+            	<!--<input type="hidden" name="_captcha" value="false">-->
+            <!--don't delete-->
             <div>
-              <input type="text" placeholder="Name" />
+              <input type="text" id="name-input" placeholder="Name" name="name" pattern="[a-zA-Z]{3,}">
             </div>
             <div>
-              <input type="email" placeholder="Email" />
+              <input required type="email" id="email-input" placeholder="Email" name="email" pattern="^[\w\.-_+!]+@[\w]+\.[\w]{2,}(\.[\w]{2,})?$" title="Invalid Email">
             </div>
             <div>
-              <input type="text" placeholder="Phone Number" />
+              <input type="tel" id="phone-input" placeholder="Phone Number" name="phone" pattern="^(((([\+?\d\-.]{1,4})?[ \-.]?\d{3})|([\+?\d\-.]{1,4})?[ \-.]?\((\d{3}\)))?[ \-.]?\d{3}[ \-.]?\d{4}\s?(e?x?t?\.?\s?\d{1,7})?)?$" title="Invalid Phone">
             </div>
             <div>
-              <input type="text" class="message-box" placeholder="Message" />
+              <input required type="text" class="message-box" id="message-input" placeholder="Message" name="message" pattern="[a-zA-Z]{2,}" title="Please type something!">
             </div>
-            <div class="d-flex ">
-              <button>
+            <span style="font-size:clamp(.5rem, 1rem, 2rem)">
+            	<input type="file" id="file-input" accept="*/*" style="border-radius:.5rem;height:2rem;width:6rem; background:gray;padding:0" name="file"> Should be less than 5mb
+            </span>
+            <div class="d-flex">
+              <button type="submit">
                 SEND
               </button>
             </div>
@@ -335,6 +343,9 @@
 
       ]
     });
+    
+    let formEl = document.querySelector(".newsletter-form");
+    formEl.querySelectorAll("input:not(input[type~=hidden])").forEach(el => el.onkeydown = (e) => e.key === "Enter" ? formEl.querySelector("button[type=submit]").click() : "");
   </script>
 
 </body>
