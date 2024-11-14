@@ -493,7 +493,7 @@
             	<input type="hidden" name="_captcha" value="false">
             <!--don't delete-->
             <div>
-              <input type="text" id="name-input" placeholder="Name" name="name" pattern="[a-zA-Z\s']{3,}">
+              <input type="text" id="name-input" placeholder="Name" name="name" pattern="[a-zA-Z-.\s']{3,}">
             </div>
             <div>
               <input required type="email" id="email-input" placeholder="Email" name="email" pattern="^[\w\.-_+!]+@[\w]+\.[\w]{2,}(\.[\w]{2,})?$" title="Invalid Email">
@@ -502,7 +502,7 @@
               <input type="tel" id="phone-input" placeholder="Phone Number" name="phone" pattern="^(((([\+?\d\-.]{1,4})?[ \-.]?\d{3})|([\+?\d\-.]{1,4})?[ \-.]?\((\d{3}\)))?[ \-.]?\d{3}[ \-.]?\d{4}\s?(e?x?t?\.?\s?\d{1,7})?)?$" title="Invalid Phone">
             </div>
             <div>
-              <input required type="text" class="message-box" id="message-input" placeholder="Message" name="message" pattern="[a-zA-Z]{2,}" title="Please type something!">
+              <input required type="text" class="message-box" id="message-input" placeholder="Message" name="message" pattern="[a-zA-Z-.\s']{2,}" title="Please type something!">
             </div>
             <span style="font-size:clamp(.5rem, 1rem, 2rem)">
             	<input type="file" id="file-input" accept="*/*" style="border-radius:.5rem;height:2rem;width:6rem; background:gray;padding:0;" name="file"> <span style="color:#eee;">Should be less than 5mb</span>
