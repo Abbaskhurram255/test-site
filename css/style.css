@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
 
 
 .loader {
@@ -7,6 +7,7 @@
   margin: auto;
   //inset: 0;
   top:0;left:0;right:0;bottom:0;
+  border-radius: 50%;
   width: 3rem;
   height: 3rem;
   --c:no-repeat linear-gradient(orange 0 0);
@@ -74,13 +75,15 @@
 }
 
 
+
+
 body {
   font-family: Helvetica, Times Roman, ms-serif, cursive !important;
   color: #0c0c0c;
   background-color: #ffffff;
 }
 h1,h2,h3,h4,li, :is(.location, .call) article,form:not(.newsletter-form){
-	font-family: "Waiting for the Sunrise", cursive;
+	font-family: "Josefin Sans", cursive;
 	letter-spacing: .1rem;
 }
 h5{
@@ -1185,6 +1188,36 @@ a:focus {
   font-weight: bold;
 }
 
+.row {
+	margin-left: -1rem !important;
+	margin-right: -1rem !important;
+}
+
+button, .custom-file-upload, .logo, .footer-logo, a{
+	-webkit-transition: all .4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	-moz-transition: all .4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	-ms-transition: all .4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	-o-transition: all .4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	transition: all .4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	&:hover, &:focus{
+		-webkit-transform: scale(1.1);
+		-moz-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		-o-transform: scale(1.1);
+		filter: brightness(1.1);
+	}
+}
+
+.custom-file-upload{
+	display: inline-block;
+	border: 1px solid #bbb;
+	padding: .5rem;
+	border-radius: 5rem;
+	& input[type='file']{
+		display: none;
+	}
+}
+
 .contact_section {
   background-image: url(../images/contact-bg.jpg);
   background-size: cover;
@@ -1220,7 +1253,7 @@ a:focus {
   color: #131313;
 }
 
-.contact_section input:-ms-input-placeholder {
+.contact_section input:-moz-input-placeholder {
   color: #131313;
 }
 
@@ -1557,6 +1590,70 @@ h4, :not(h4.golden-text):is(.info-nav, .discover) li a {
 }
 
 
+.location, .maps-section{
+	position: relative;
+}
+@media (min-width: 768px) {
+	.footer-logo{
+		//margin-left: 20%;
+	}
+	.location, .call{
+		margin: 1.5rem;
+		& #location-img{
+			position: relative;
+			right: -1rem;
+		}
+		& .maps-section{
+			position: relative;
+			left: -2.5rem;
+			height: 10%;
+			width: 150%;
+		}
+		& a, h6{
+			position: relative;
+			left: -1.5rem;
+			&:is(h6){
+				position: relative;
+				left: -3.5rem;
+			}
+		}
+	}
+}
+@media (max-width: 768px){
+	.location, .call{
+		position: relative;
+		margin: 1rem;
+		& h6{
+			position: relative !important;
+			left: -.5rem;
+		}
+		a{
+			&[href^=tel]{
+				position: relative;
+				left: 2rem;
+			}
+			&[href^=mailto]{
+				position: relative;
+				left: 1.2rem;
+			}
+		}
+		& article, a article {
+			text-align: middle;
+			left: 4rem;
+		}
+		& #location-img{
+			position: relative;
+			right: -1.5rem;
+		}
+		& .maps-section{
+			right: -2.5rem;
+		}
+	}
+}
+:is(.location) article{
+	border-left: 2px solid #960;
+	position: relative;
+}
 @media (max-width: 360px) {
     .slider_section .slider_content .img_container {
         visibility: hidden;
@@ -1564,6 +1661,36 @@ h4, :not(h4.golden-text):is(.info-nav, .discover) li a {
     .contact_section .img-box {
 		display: none;
     }
+	.location, .call{
+		position: relative;
+		margin: 1rem;
+		& h6{
+			position: relative !important;
+			//left: -1rem;
+		}
+		a{
+			&[href^=tel]{
+				position: relative;
+				left: 2rem;
+			}
+		}
+		& article{
+			place-items: center;
+			left: 1rem;
+			border-left: 2px solid #960;
+			max-width: 50%;
+		}
+		& #location-img{
+			position: relative;
+			right: -1.5rem;
+		}
+		& .maps-section{
+			right: -2.5rem;
+			//width: 60%;
+			max-width: 65%;
+		}
+	}
+	
     /*
     .carousel :is(h3, p){
 		font-size: 1rem;
@@ -1578,7 +1705,17 @@ h4, :not(h4.golden-text):is(.info-nav, .discover) li a {
     h1, h2, h3, h4, h5, h6{
 		font-size: 1.5rem;
     }
+	.maps-section{
+		display: none;
+	}
+	.location article, .call a article{
+		border-left: none;
+		position: relative;
+		left: 1rem;
+		width: 60%;
+	}
 }
+
 
 
 /*# sourceMappingURL=style.css.map */
