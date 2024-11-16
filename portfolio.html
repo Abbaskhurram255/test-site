@@ -27,9 +27,13 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 
-<body class="sub_page">
+<body class="sub_page" style="opacity: 0">
   <div class="hero_area">
 
     <div class="main slick_main">
@@ -81,7 +85,7 @@
   <section class="portfolio_section layout_padding-top">
     <div class="container">
       <div class="heading_container">
-        <h2>
+        <h2 class="animate__animated animate__bounce animate__delay-2s">
           Our Portfolio
         </h2>
         <p>
@@ -242,7 +246,6 @@
                 Office Address:
               </h6>
               <a style="display: block" href="https://maps.google.com/maps?ll=24.872946,67.364561&z=16&t=m&hl=en-US&gl=US&mapclient=embed&cid=12754865107045934155">
-                <img src="images/location.png" alt="">
                 <section class="maps-section">
                 	<div style="text-decoration:none; overflow:hidden;max-width:100%;margin:2rem;width:12rem;height:10rem;border-radius:1.8rem""><div id="google-maps-canvas" style="height:100%; width:100%;max-width:100%;"><iframe id="gmaps gmaps-frame" style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=L7 Gulshan"></iframe></div></div>
                 </section>
@@ -255,16 +258,16 @@
               <h6>
                 Customer Service:
               </h6>
-              <a>
-                <img src="images/call.png" alt="call icon">
+              <a href="tel:+92 313 164 2191">
+                <img src="images/call.png" alt="call-image">
                 <article>
-                  +92 313 164 5756
+                  +92 313 164 2191
                 </article>
               </a>
             </div>
             <div class="call">
               <a href="mailto:demo@site.pk">
-                <img src="images/mail.png" alt="mail icon">
+                <img src="images/mail.png" alt="">
                 <article>
                   demo@site.pk
                 </article>
@@ -393,6 +396,14 @@
 
       ]
     });
+  </script>
+  <script>
+    setTimeout(function () {
+      document.querySelector('.loader').style.display = 'none';
+      document.querySelector('main').style.visibility = 'visible';
+    }, 2e3);
+    $(()=>$("body").css("opacity", "0"))
+$("body").delay(10).animate({"opacity": "1"}, 1000);
   </script>
 
 </body>

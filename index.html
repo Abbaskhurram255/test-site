@@ -29,10 +29,15 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 
 <body>
-	<div class="loader"></div>
+	<div class="loader class="animate__animated animate__fadeInRight animate__delay-1s"></div>
    <main style="visibility: hidden;">
    	<div class="hero_area">  	
     <div class="main slick_main">
@@ -53,7 +58,7 @@
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a href="index.html" class="navbar-brand">
-            <img type="image/webp" class="logo" src="images/logo-black.webp" alt="logo">
+            <img type="image/webp" class="logo animate__animated animate__fadeInDown animate__delay-4s" src="images/logo-black.webp" alt="logo">
           </a>
           <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -119,16 +124,16 @@
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <div class="detail_box">
-                      <h1>
+                      <h1 class="animate__animated animate__fadeInRight animate__delay-4s">
                         CREATIVE <br />
                         PHOTOGRAPHY
                       </h1>
-                      <p>
+                      <p class="animate__animated animate__fadeInDown animate__delay-4s">
                         There are many variations of passages of Lorem Ipsum
                       </p>
                       <div class="btn-box">
-                        <a href="#" class="btn-1">Contact</a>
-                        <a href="#" class="btn-2">About Us</a>
+                        <a href="about.html" class="btn-1 animate__animated animate__fadeInRight animate__delay-4s">Contact</a>
+                        <a href="about.html" class="btn-2 btn-1 animate__animated animate__fadeInUp animate__delay-4s"><i class="fa fa-question"></i>About Us</a>
                       </div>
                     </div>
                   </div>
@@ -142,8 +147,8 @@
                         There are many variations of passages of Lorem Ipsum
                       </p>
                       <div class="btn-box">
-                        <a href="#" class="btn-1">Contact</a>
-                        <a href="#" class="btn-2">About Us</a>
+                        <a href="https://wa.me/923131642191" class="btn-1"><i class="fa fa-whatsapp"></i>Contact</a>
+                        <a href="about.html" class="btn-2">About Us</a>
                       </div>
                     </div>
                   </div>
@@ -157,8 +162,8 @@
                         There are many variations of passages of...
                       </p>
                       <div class="btn-box">
-                        <a href="#" class="btn-1">Contact</a>
-                        <a href="#" class="btn-2">About Us</a>
+                        <a href="https://wa.me/923131642191" class="btn-1"><i class="fa fa-whatsapp"></i>Contact</a>
+                        <a href="about.html" class="btn-2">About Us</a>
                       </div>
                     </div>
                   </div>
@@ -505,7 +510,8 @@
               <input required type="text" class="message-box" id="message-input" placeholder="Message" name="message" pattern="[a-zA-Z-.\s']{2,}" title="Please type something!">
             </div>
             <span style="font-size:clamp(.5rem, 1rem, 2rem)">
-            	<input type="file" id="file-input" accept="*/*" style="border-radius:.5rem;height:2rem;width:6rem; background:gray;padding:0;" name="file"> <span style="color:#eee;">Should be less than 5mb</span>
+            	<label onclick="(()=>document.querySelector('.custom-file-upload input').click())()" class="custom-file-upload" for="file-upload" class="custom-file-upload">
+    <i class="fa fa-cloud-upload"></i> Upload<input type="file" id="file-input" accept="*/*" style="border-radius:.5rem;height:2rem;width:6rem; background:gray;padding:0;" name="file"></label> <span style="color:#eee;">Should be less than 5mb</span>
             </span>
             <div class="d-flex">
               <button type="submit">
@@ -516,16 +522,9 @@
         </div>
         <div class="col-md-6">
           <div class="img-box">
-            <img src="images/contact-img.png" alt="">
+            <img src="images/contact-img.png" alt="contact icon">
             <div class="img_overlay">
-              <h2>
-                Best <br>
-                Photo <br>
-                studio in entire Pakistan
-              </h2>
-              <a href="#">
-                Contact Us
-              </a>
+              
             </div>
           </div>
         </div>
@@ -594,9 +593,8 @@
                 Office Address:
               </h6>
               <a style="display: block" href="https://maps.google.com/maps?ll=24.872946,67.364561&z=16&t=m&hl=en-US&gl=US&mapclient=embed&cid=12754865107045934155">
-                  <img src="images/location.png" alt="location-png">
-                      <section class="maps-section">
-                	      <div style="text-decoration:none; overflow:hidden;max-width:100%;margin:2rem;width:12rem;height:10rem;border-radius:1.8rem""><div id="google-maps-canvas" style="height:100%; width:100%;max-width:100%;"><iframe id="gmaps gmaps-frame" style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=L7 Gulshan"></iframe></div></div>
+                   <section class="maps-section">
+                       <div style="text-decoration:none; overflow:hidden;max-width:100%;margin:2rem;width:12rem;height:10rem;border-radius:1.8rem""><div id="google-maps-canvas" style="height:100%; width:100%;max-width:100%;"><iframe id="gmaps gmaps-frame" style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=L7 Gulshan"></iframe></div></div>
                     </section>
                 <article>
                   Karachi, SD xxxxx, Pakistan
@@ -862,8 +860,9 @@
       document.querySelector('.loader').style.display = 'none';
       document.querySelector('main').style.visibility = 'visible';
     }, 2e3);
+    $(()=>$("body>main").css("opacity", "0"))
+    $("body>main").delay(2000).animate({"opacity": "1"}, 1500);
   </script>
-  <!--loader-->
 
 </body>
 
