@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Caesar+Dressing|Baloo|Creepster|Grandstander|Gloria+Hallelujah|Butcherman|Nosifer");
 
 
 .loader {
@@ -82,8 +82,8 @@ body {
   color: #0c0c0c;
   background-color: #ffffff;
 }
-h1,h2,h3,h4,li, :is(.location, .call) article,form:not(.newsletter-form){
-	font-family: "Josefin Sans", cursive;
+:not(form):is(h1,h2,h3,h4,li, :is(.location, .call) article) {
+	font-family: "Josefin Sans", serif;
 	letter-spacing: .1rem;
 }
 h5{
