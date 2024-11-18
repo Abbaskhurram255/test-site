@@ -32,8 +32,11 @@
     background: rgba(90, 10, 4, .5);
 }
 
+img.logo {
+	border-radius: 20%;height:5rem;width:3rem; 
+}
+
 img {
-	&.logo{border-radius: 20%;height:5rem;width:3rem; }
 	transition: transform .5s, box-shadow 1s;
 	&:hover{
 		box-shadow: 3px 3px 5px #555, 1px 2px 1.2px #ff0;
@@ -44,6 +47,23 @@ img {
 		transform: scale(1.1) skew(-3deg);
 	}
 }
+
+.news_section .row .box {
+	border-radius: 10% 0 10% 0;
+	& .img-box img {
+		border-radius: 10% 0;
+	}
+	transition: transform .5s, box-shadow 1s;
+	&:hover{
+		box-shadow: 3px 3px 5px #555, 1px 2px 1.2px #ff0;
+		-webkit-transform: scale(1.1) skew(-3deg);
+		-moz-transform: scale(1.1) skew(-3deg);
+		-ms-transform: scale(1.1) skew(-3deg);
+		-o-transform: scale(1.1) skew(-3deg);
+		transform: scale(1.1) skew(-3deg);
+	}
+}
+
 :not(.client_container img, .logo):is(img){
 	-webkit-animation: new-anim 2s 1;
 	-moz-animation: new-anim 2s 1;
