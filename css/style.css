@@ -200,6 +200,10 @@ body button, body [type='button'], body input[type='reset'], body input[type='su
     cursor: url(../images/cursor-secondary.png) 2 2, pointer !important;
 }
 
+p:active{
+	color: #ccc;
+}
+
 .layout_padding {
   padding-top: 120px;
   padding-bottom: 120px;
