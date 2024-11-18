@@ -1721,6 +1721,9 @@ h1{
 	}
 }
 @media (max-width: 768px){
+	.contact_section .img-box .img_overlay h2 {
+		display: none;
+	}
 	.location, .call{
 		position: relative;
 		margin: 1rem;
