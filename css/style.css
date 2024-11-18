@@ -1674,6 +1674,22 @@ h1{
 	position: relative;
 }
 
+.info_form {
+	max-width: 90%;
+	-webkit-filter: opacity(.6);
+	-moz-filter: opacity(.6);
+	-ms-filter: opacity(.6);
+	-o-filter: opacity(.6);
+	filter: opacity(.6);
+	&:hover {
+		-webkit-filter: opacity(.8);
+		-moz-filter: opacity(.8);
+		-ms-filter: opacity(.8);
+		-o-filter: opacity(.8);
+		filter: opacity(.8);
+	}
+}
+
 @media (min-width: 1000px) {
 	
 }
