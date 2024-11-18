@@ -1,4 +1,79 @@
-@import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Caesar+Dressing|Baloo|Creepster|Grandstander|Gloria+Hallelujah|Butcherman|Nosifer");
+//@import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Caesar+Dressing|Baloo|Creepster|Grandstander|Gloria+Hallelujah|Butcherman|Nosifer");
+
+
+/** FONTS **/
+/* Baloo */
+@font-face {
+  font-family: 'Baloo';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/baloo.woff2") format('woff2'), url("../fonts/baloo.woff2") format('woff'), url("../fonts/baloo.woff2") format('embedded-opentype'), url("../fonts/baloo.woff2") format('truetype'), url("../fonts/baloo.woff2") format('svg');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* Butcherman */
+@font-face {
+  font-family: 'Butcherman';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/butcherman.woff2") format('woff2'), url("../fonts/butcherman.woff2") format('woff'), url("../fonts/butcherman.woff2") format('embedded-opentype'), url("../fonts/butcherman.woff2") format('truetype'), url("../fonts/butcherman.woff2") format('svg');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* Caesar Dressing */
+@font-face {
+  font-family: 'Caesar Dressing';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/caesar-dressing.woff2") format('woff2'), url("../fonts/caesar-dressing.woff2") format('woff'), url("../fonts/caesar-dressing.woff2") format('embedded-opentype'), url("../fonts/caesar-dressing.woff2") format('truetype'), url("../fonts/caesar-dressing.woff2") format('svg');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* Creepster */
+@font-face {
+  font-family: 'Creepster';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/creepster.woff2") format('woff2'), url("../fonts/creepster.woff2") format('woff'), url("../fonts/creepster.woff2") format('embedded-opentype'), url("../fonts/creepster.woff2") format('truetype'), url("../fonts/creepster.woff2") format('svg');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* Gloria Hallelujah */
+@font-face {
+  font-family: 'Gloria Hallelujah';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/gloria-hallelujah.woff2") format('woff2'), url("../fonts/gloria-hallelujah.woff2") format('woff'), url("../fonts/gloria-hallelujah.woff2") format('embedded-opentype'), url("../fonts/gloria-hallelujah.woff2") format('truetype'), url("../fonts/gloria-hallelujah.woff2") format('svg');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* Grandstander */
+@font-face {
+  font-family: 'Grandstander';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/grandstander.woff2") format('woff2'), url("../fonts/grandstander.woff2") format('woff'), url("../fonts/grandstander.woff2") format('embedded-opentype'), url("../fonts/grandstander.woff2") format('truetype'), url("../fonts/grandstander.woff2") format('svg');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* Josefin Sans */
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/josefin-sans.woff2") format('woff2'), url("../fonts/josefin-sans.woff2") format('woff'), url("../fonts/josefin-sans.woff2") format('embedded-opentype'), url("../fonts/josefin-sans.woff2") format('truetype'), url("../fonts/josefin-sans.woff2") format('svg');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* Nosifer */
+@font-face {
+  font-family: 'Nosifer';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/nosifer.woff2") format('woff2'), url("../fonts/nosifer.woff2") format('woff'), url("../fonts/nosifer.woff2") format('embedded-opentype'), url("../fonts/nosifer.woff2") format('truetype'), url("../fonts/nosifer.woff2") format('svg');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+
+
+
+
+
+
 
 
 .loader {
@@ -1690,6 +1765,26 @@ h1{
 	}
 }
 
+.review-section img.review {
+    -webkit-transition: all 0.3s ease 0s !important;
+    -moz-transition: all 0.3s ease 0s !important;
+    -ms-transition: all 0.3s ease 0s !important;
+    -o-transition: all 0.3s ease 0s !important;
+    transition: all 0.3s ease 0s !important;
+}
+.review-section img.review:hover{
+    -webkit-filter: grayscale(100%) !important;
+    -moz-filter: grayscale(100%) !important;
+    -ms-filter: grayscale(100%) !important;
+    -o-filter: grayscale(100%) !important;
+    filter: grayscale(100%) !important;
+    -webkit-transform: scale(.9) !important;
+    -moz-transform: scale(.9) !important;
+    -ms-transform: scale(.9) !important;
+    -o-transform: scale(.9) !important;
+    transform: scale(.9) !important;
+}
+
 @media (min-width: 1000px) {
 	
 }
@@ -1721,7 +1816,7 @@ h1{
 	}
 }
 @media (max-width: 768px){
-	.contact_section .img-box .img_overlay h2 {
+	.contact_section .img-box {
 		display: none;
 	}
 	.location, .call{
