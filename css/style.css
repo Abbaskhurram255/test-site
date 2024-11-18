@@ -1232,7 +1232,7 @@ a:focus {
 
 body{
 	color: white;
-	h1{color: green;}
+	h1{color: #222;}
 	//p{color: #444}
 }
 
@@ -1244,7 +1244,7 @@ body{
 
 
 section, .footer{
-	opacity: .9;
+	//opacity: .9;
 }
 
 .review-section .client_container {
