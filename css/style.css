@@ -1675,16 +1675,10 @@ h1{
 }
 
 @media (min-width: 1000px) {
-	.hero_area{
-		height: 0vh !important;
-	}
+	
 }
 
 @media (min-width: 768px) {
-	.hero_area{
-		height: auto !important;
-	}
-	
 	.location, .call{
 		margin: 1.5rem;
 		& :is(.maps-section+article) {
