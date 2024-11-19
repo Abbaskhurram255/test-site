@@ -874,6 +874,7 @@ a:focus {
 .quality_section {
   background-image: url(../images/quality-bg.jpg);
   background-size: cover;
+  opacity: .7;
   color: #ffffff;
   margin-top: -2px;
 }
@@ -1238,7 +1239,7 @@ a:focus {
 
 .client_section .carousel-control-prev:hover,
 .client_section .carousel-control-next:hover {
-  background-color: #252525;
+  //background-color: #252525;
 }
 
 .client_section .carousel-control-prev {
@@ -1318,7 +1319,7 @@ body{
 
 
 body>main {
-	background: url(https://images.unsplash.com/photo-1489913590284-9269438bb411?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+	background: url("../images/bk.jpg");
 	background-attachment: fixed;
 	background-position: bottom;
 	background-size: cover;
