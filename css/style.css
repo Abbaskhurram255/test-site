@@ -1172,6 +1172,7 @@ a:focus {
 
 .client_section .box .img-box img {
   max-width: 100%;
+  max-height: 30rem;
   border-radius: 25% 5%;
 }
 
