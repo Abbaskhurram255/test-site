@@ -39,9 +39,6 @@
 <body>
 	<div class="loader"></div>
    <main style="visibility: hidden;">
-   	<video style="position:fixed;right:0;bottom:0;min-height:100%;min-width:100%" autoplay muted loop id="bg-vid">
-		   <source src="videos/main.mp4" type="video/mp4">
-	   </video>
    	<div class="hero_area">  	
     <div class="main slick_main">
       <div class="slider slider-for main_img-container">
@@ -61,7 +58,7 @@
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a href="index.html" class="navbar-brand">
-            <img type="image/webp" class="logo animate__animated animate__fadeInDown animate__delay-4s" src="images/logo-black.webp" alt="logo">
+            <img type="image/jpeg" class="logo animate__animated animate__fadeInDown animate__delay-4s" src="images/randUsers/14.jpg" alt="logo">
           </a>
           <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -209,10 +206,10 @@
       <div class="box">
         <div class="img_container">
           <div class="img-box b1">
-            <img src="images/a-1.jpg" alt="">
+            <img src="images/randUsers/14.jpg" alt="">
           </div>
           <div class="img-box b2">
-            <img src="images/a-2.jpg" alt="">
+            <img src="images/randUsers/15.jpg" alt="">
           </div>
         </div>
         <div class="detail-box">
@@ -508,7 +505,7 @@
   <!-- end contact section -->
 
   <!-- info section -->
-  <section class="info_section layout_padding2 footer" style="border-top: 4px dotted #999">
+  <section class="info_section layout_padding2 footer" style="border-top: 4px dotted #999;">
     <div class="container">
       <div class="row">
         <div class="col-md-3">
@@ -911,8 +908,10 @@
       document.querySelector('.loader').style.display = 'none';
       document.querySelector('main').style.visibility = 'visible';
     }, 2e3);
-    $(()=>$("body>main").css("opacity", "0"))
-    $("body>main").delay(2000).animate({"opacity": "1"}, 1500);
+    $(document).ready(()=>{
+    	$(()=>$("body>main").css("opacity", "0"))
+	    $("body>main").delay(5000).animate({"opacity": "1"}, 3500);
+    })
   </script>
 
 </body>
