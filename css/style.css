@@ -201,7 +201,7 @@ body button, body [type='button'], body input[type='reset'], body input[type='su
 }
 
 p:active{
-	color: #ccc;
+	color: beige;
 }
 
 .layout_padding {
