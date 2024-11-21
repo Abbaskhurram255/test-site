@@ -1265,8 +1265,9 @@ a:focus {
 }
 
 .news_section .box {
-  margin-top: 55px;
-  background-color: #ffffff;
+    margin-top: 55px;
+    background-color: #ffffff;
+    padding: .75rem;
 }
 
 .news_section .box .img-box {
