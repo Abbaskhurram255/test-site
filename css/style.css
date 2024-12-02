@@ -289,6 +289,7 @@ p:active{
   background-position: center;
   height: 100vh;
   width: 100%;
+  padding: .5rem;
 }
 
 .hero_area .slick_main .main-img-box.b1 {
@@ -1215,7 +1216,7 @@ a:focus {
   -moz-clip-path: polygon(0% 15%, 7% 8%, 15% 0%, 85% 0, 92% 7%, 100% 15%, 100% 85%, 92% 93%, 85% 100%, 15% 100%, 7% 93%, 0% 85%);
   -ms-clip-path: polygon(0% 15%, 7% 8%, 15% 0%, 85% 0, 92% 7%, 100% 15%, 100% 85%, 92% 93%, 85% 100%, 15% 100%, 7% 93%, 0% 85%);
   -o-clip-path: polygon(0% 15%, 7% 8%, 15% 0%, 85% 0, 92% 7%, 100% 15%, 100% 85%, 92% 93%, 85% 100%, 15% 100%, 7% 93%, 0% 85%);
-          clip-path: polygon(0% 15%, 7% 8%, 15% 0%, 85% 0, 92% 7%, 100% 15%, 100% 85%, 92% 93%, 85% 100%, 15% 100%, 7% 93%, 0% 85%);
+  clip-path: polygon(0% 15%, 7% 8%, 15% 0%, 85% 0, 92% 7%, 100% 15%, 100% 85%, 92% 93%, 85% 100%, 15% 100%, 7% 93%, 0% 85%);
   margin-top: 45px;
 }
 
@@ -1234,7 +1235,7 @@ a:focus {
   -moz-transform: translateY(50%);
   -ms-transform: translateY(50%);
   -o-transform: translateY(50%);
-          transform: translateY(50%);
+  transform: translateY(50%);
 }
 
 .client_section .carousel-control-prev:hover,
@@ -1267,7 +1268,7 @@ a:focus {
 .news_section .box {
     margin-top: 55px;
     background-color: #ffffff;
-    padding: .75rem;
+    padding-bottom: 1rem;
 }
 
 .news_section .box .img-box {
@@ -1290,7 +1291,7 @@ a:focus {
 }
 
 .news_section .box .detail-box {
-  margin-top: 25px;
+  margin-top: 2rem;
 }
 
 .news_section .box .detail-box h5 {
