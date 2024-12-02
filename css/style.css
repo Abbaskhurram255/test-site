@@ -1674,6 +1674,10 @@ button, .custom-file-upload, .logo, .footer-logo, a, :is(.discover, .info-nav) l
   &:active{background-color:crimson;}
 }
 
+.client_section .carousel-control-prev:hover, .client_section .carousel-control-next:hover {
+    box-shadow: -4px 4px 2px 1px #222;
+}
+
 h1, h2 {
     -webkit-transition: transform 3s ease;
     -moz-transition: transform 3s ease;
